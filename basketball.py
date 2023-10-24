@@ -5,10 +5,10 @@ from PIL import Image
 import pickle
 import numpy as np
 import sklearn
-model = pickle.load(open("C:\\Users\\Amarachi Uzochukwu\\Desktop\\randomf_model.sav", 'rb'))
+model = pickle.load(open("randomf_model.sav", 'rb'))
 st.title('NBA SALARY PREDICTION APP')
 st.sidebar.header('Player Information')
-image = Image.open("C:\\Users\\Amarachi Uzochukwu\\Downloads\\pexels-markus-spiske-1752757.jpg")
+image = Image.open("pexels-markus-spiske-1752757.jpg")
 st.image(image, width=350)
 def user_input():
     rating = st.sidebar.slider('ratings')
